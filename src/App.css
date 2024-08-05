@@ -1,0 +1,337 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 77px;
+} 
+
+/* Navbar */
+
+.sidenav {
+  transition: transform 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
+  transform: translateX(-100%);
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 300px;
+  /* background-color: #222; */
+  background: rgba(245, 245, 245, 0.7);
+  z-index: 999 !important;
+  overflow-y: auto;
+}
+
+.sidenav.show {
+  transform: translateX(0);
+}
+
+
+.navbar-glass{
+  /* From https://css.glass */
+/* background: rgba(245, 245, 245, 1); */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(245, 245, 245, 0.3); */
+}
+
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+
+
+/* 3D CSS */
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  margin: 20px;
+}
+.single-box{
+  width: 350px;
+  height: 350px;
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+}
+.box-content{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px);
+  transition: all 1s;
+}
+.sides{
+  position: absolute;
+  width: 225px;
+  height: 200px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.side-1{
+  transform: rotateY(0deg) translateZ(100px);
+  backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden !important;
+  z-index: 2;
+}
+.side-2{
+  transform: rotateY(90deg) translateZ(150px);
+  backface-visibility: hidden !important;
+}
+.box:hover .box-content{
+  transform: translateZ(-150px) rotateY(-90deg);
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+@media (max-width:991px){
+  .wrapper{
+      flex-direction: column;
+  }
+}
+
+
+
+/* SLIDER */
+
+.slider {
+  overflow: hidden;
+  /* width: 100vw; */
+  height: 100vh;
+  position: relative;
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slide 20s infinite;
+}
+
+.slider .slide:nth-child(1) {
+  background-image: url('https://img.veenaworld.com/wp-content/uploads/2023/06/Natures-Paradise-Discover-the-Best-Places-To-Visit-in-North-East-India.jpg');
+  animation-delay: -0;
+}
+
+.slider .slide:nth-child(2) {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9a/TawangMonastery-ArunachalPradesh-1.jpg');
+  animation-delay: -4s;
+}
+  
+.slider .slide:nth-child(3) {
+  background-image: url('https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+  animation-delay: -8s;
+}
+  
+.slider .slide:nth-child(4) {
+  background-image: url('https://images.unsplash.com/photo-1517430554953-a5ba4678fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+  animation-delay: -12s;
+}
+
+.slider .slide:nth-child(5) {
+  background-image: url('https://nomadicweekends.com/blog/wp-content/uploads/2019/09/66851483_2355591914534526_8824396371357335552_o.jpg');
+  animation-delay: -16s;
+}
+
+@keyframes slide {
+  0%, 15%, 100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  20% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  95% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}
+
+
+/* SCROLL-BTN */
+.scroll-down-btn {
+  transition: all 0.3s ease; /* Transition for smooth hover effect */
+}
+
+.scroll-down-btn {
+  border: solid 1px white; /* Change background color on hover */
+}
+.scroll-down-btn:hover {
+  border: solid 3px white; /* Change background color on hover */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px); /* Adjust bounce height */
+  }
+  60% {
+    transform: translateY(-5px); /* Adjust bounce height */
+  }
+}
+
+.animate-bounce:hover {
+  animation: bounce 1s infinite; /* Apply bounce animation on hover */
+}
+
+
+
+/* Grow Animation Services*/
+
+@keyframes growContent {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sale-card {
+  /* animation: growContent 0.5s ease-in-out; */
+  overflow: hidden; /* Hide overflow when content grows */
+
+}
+.sale-card:hover .contentA {
+display: none !important;
+opacity: 0 ; /* Hide contentA on hover */
+}
+
+.contentB {
+  animation: growContent 0.3s ease-in-out;
+  animation-fill-mode: both;
+  display: none; /* Initially hide contentB */
+}
+
+.sale-card:hover .contentB {
+  display: block;
+  width:100%;
+  height:100%;/* Show contentB on hover */
+}
+
+/* Footer Bubble */
+.bubbles{
+  position:absolute;
+  width:100%;
+  height: 100%;
+  z-index:0;
+  overflow:hidden;
+  top:0;
+  left:0;
+}
+.bubble{
+  position: absolute;
+  bottom:-100px;
+  width:40px;
+  height: 40px;
+  background:#3FC1C9  ;
+  border-radius:50%;
+  opacity:0.5;
+  animation: rise 10s infinite ease-in;
+}
+.bubble:nth-child(1){
+  width:40px;
+  height:40px;
+  left:10%;
+  animation-duration:8s;
+}
+.bubble:nth-child(2){
+  width:20px;
+  height:20px;
+  left:20%;
+  animation-duration:5s;
+  animation-delay:1s;
+}
+.bubble:nth-child(3){
+  width:50px;
+  height:50px;
+  left:35%;
+  animation-duration:7s;
+  animation-delay:2s;
+}
+.bubble:nth-child(4){
+  width:80px;
+  height:80px;
+  left:50%;
+  animation-duration:11s;
+  animation-delay:0s;
+}
+.bubble:nth-child(5){
+  width:35px;
+  height:35px;
+  left:55%;
+  animation-duration:6s;
+  animation-delay:1s;
+}
+.bubble:nth-child(6){
+  width:45px;
+  height:45px;
+  left:65%;
+  animation-duration:8s;
+  animation-delay:3s;
+}
+.bubble:nth-child(7){
+  width:90px;
+  height:90px;
+  left:70%;
+  animation-duration:12s;
+  animation-delay:2s;
+}
+.bubble:nth-child(8){
+  width:25px;
+  height:25px;
+  left:80%;
+  animation-duration:6s;
+  animation-delay:2s;
+}
+.bubble:nth-child(9){
+  width:15px;
+  height:15px;
+  left:70%;
+  animation-duration:5s;
+  animation-delay:1s;
+}
+.bubble:nth-child(10){
+  width:90px;
+  height:90px;
+  left:25%;
+  animation-duration:10s;
+  animation-delay:4s;
+}
+@keyframes rise{
+  0%{
+    bottom:-100px;
+    transform:translateX(0);
+  }
+  50%{
+    transform:translate(100px);
+  }
+  100%{
+    bottom:1080px;
+    transform:translateX(-200px);
+  }
+}
