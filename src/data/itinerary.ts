@@ -63,19 +63,6 @@ const itinerary:Itinerary[] = [
           }
         ]
       },
-      {
-        title:"hfhjgfj",
-        duration:"(5N/6D)",
-        itineraryCode:"67",
-        gForm:"https://forms.gle/3p1bBZf8mD1yK5zQ9",
-        days:[
-          {
-            day:1,
-            title:"gdgf",
-            description:"gdfg"
-          }
-        ]
-      },
     {
     title: "Udaipur(2N), Jaisalmer(2N), Jodhpur(1N)",
     duration: "(5N/6D)",
@@ -1058,6 +1045,44 @@ const itinerary:Itinerary[] = [
           day: 11,
           title: "Departure",
           description: "Today after breakfast, proceed towards NJP station. Trip end!!!"
+        }
+      ]
+    },
+    {
+      title: "Munnar(2N), Thekkady(1N), Alleppey(1N), Kochi(1N)",
+      duration: "(5N/6D)",
+      itineraryCode: "16",
+      gForm: "https://forms.gle/2GjkDbGx6ccnhYfn6",
+      days: [
+        {
+          day: 1,
+          title: "Cochin Arrival - Munnar",
+          description: "Arrival at cochin airport and proceed towards Munnar. Reach Munnar and check into the resort. Later in the evening proceed to visit the nearest Tea Museum. Back to the hotel; Rest of the time to relax. Overnight stay at Munnar."
+        },
+        {
+          day: 2,
+          title: "Munnar",
+          description: "Munnar is situated at the confluence of three mountain streams - Mudrapuzha, Nallathanni and Kundale, Munnar is 1600 Meter above sea level. This majestic hill station was once the summer resort of the British government in South India. Sightseeing in Munnar - Mattupetty Dam, Kundale Lake, Echo point, Rajamalai where you can visit the rarest species known as Nilgiri Tars. Overnight stay at Munnar."
+        },
+        {
+          day: 3,
+          title: "Munnar - Thekkady",
+          description: "After breakfast checkout from hotel and drive to Thekkady, on arrival check in to the hotel. Proceed for Spice plantation tour. Later in the evening, proceed for Boating in Lake Periyar (part of conducted tour). Back to the hotel for overnight stay at Thekkady."
+        },
+        {
+          day: 4,
+          title: "Thekkady - Alleppey",
+          description: "After breakfast, check out from the hotel and drive to Alleppey ‘the popular backwater paradise of kerala’ Reach Alleppey within 4 hours. Check into the resort. Later in the evening, opt for 3 hours motor boat cruise (payable direct) to explore the backwaters, lush coconut lagoons, never-ending paddy fields, narrow canals. Back to the hotel for overnight stay at Alleppey."
+        },
+        {
+          day: 5,
+          title: "Alleppey - Kochi",
+          description: "After breakfast, check out and drive to cochin (2 hours). Reach cochin before noon. Check into the hotel. Relax for some time. Later in the afternoon proceed to visit local or nearby places for shopping or sightseeing. proceed to visit Fort Kochi & Mattanchery Area. Visit Jewish Synagogue, St. Francis Church, Santa Cruz Basilica, Chinese fishing nets. Visit Mattanchery Palace; overnight stay at Kochi."
+        },
+        {
+          day: 6,
+          title: "Kochi Airport Drop",
+          description: "After check out from the Hotel and drive to Cochin Airport / railway station. Trip ends!!!"
         }
       ]
     }

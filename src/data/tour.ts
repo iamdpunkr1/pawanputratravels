@@ -218,15 +218,7 @@ const tours: TourType[] = [
     nights: 5,
     itineraryCode: '17'
   },
-  {
-    slno: '23',
-    state: 'test Assam Meghalaya Nagaland',
-    image: assam_meghalaya,
-    placesCovered: 'Guwahati(2N), Shillong(2N), Cherrapunjee(2N), Kaziranga(2N)',
-    days: 8,
-    nights: 7,
-    itineraryCode: '67'
-  }
+
 ];
 
 export default tours;

@@ -335,3 +335,17 @@ opacity: 0 ; /* Hide contentA on hover */
     transform:translateX(-200px);
   }
 }
+
+
+.slick-dots li.slick-active button::before{
+  color: #364f6b !important;
+  opacity: 1 !important;
+  content :'•' !important;
+}
+
+.slick-dots li button::before{
+  color: rgb(134 134 134 / 20%) !important;
+  opacity: 100 !important;
+  content :'•' !important;
+  font-size: 14px !important;
+}

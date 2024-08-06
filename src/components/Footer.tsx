@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png"
+import logo from "../assets/logo2.png"
 
 
 const Footer = () => {
@@ -55,8 +55,8 @@ const Footer = () => {
                 </g>
               </svg>
               <div>
-              <p className="text-sm text-gray-200">Bamunimaidan, Kamrup Metro</p>
-              <p className="text-sm text-gray-200">Guwahtati, Assam</p>
+              <p className="text-sm text-gray-200">Sugam Path, Mathgharia</p>
+              <p className="text-sm text-gray-200"> Guwahati, Assam 781020</p>
               </div>
             </div>
            
@@ -77,7 +77,7 @@ const Footer = () => {
             </svg>
   
               <div>
-              <p className="text-sm text-gray-200">+91 9954626999, 8876023888</p>
+              <p className="text-sm text-gray-200">+91 8134962830</p>
               
               </div>
             </div>
@@ -100,7 +100,7 @@ const Footer = () => {
             </svg>
   
               <div>
-              <p className="text-sm text-gray-200">info@pawanputra.com</p>
+              <p className="text-sm text-gray-200">pawanputratravels1@gmail.com</p>
               </div>
             </div>
             </div>
@@ -112,7 +112,7 @@ const Footer = () => {
             </h3>
             <div className="flex gap-4 z-30">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14321.296091306824!2d91.77914479355407!3d26.186135838905173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a59b1add4f805%3A0x13724df272fdab96!2sBamunimaidan%2C%20Guwahati%2C%20Assam!5e0!3m2!1sen!2sin!4v1719045554558!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14322.27619892081!2d91.8166074!3d26.178161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a59dad8415f4d%3A0x6ff5cc61b7b69356!2spawanputra%20travel!5e0!3m2!1sen!2sin!4v1722928863208!5m2!1sen!2sin"
                 width={300}
                 height={200}
                 style={{ border: 0 }}

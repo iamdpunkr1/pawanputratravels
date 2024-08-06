@@ -23,9 +23,9 @@ const ToursAndPackages = () => {
   };
 
   return (
-    <section className="max-w-11/12 py-8 mx-auto bg-gray-50">
-      <div className="flex justify-between py-8 px-4">
-        <h1 className="text-[#364F6B] font-semibold text-3xl">Explore beautiful places now</h1>
+    <section className=" bg-gray-50  py-8 ">
+      <div className="flex justify-center flex-wrap md:justify-between gap-4 py-8 max-w-7xl mx-auto px-4">
+        <h1 className="text-[#364F6B] font-semibold text-3xl">Our packages</h1>
         
         <label className="input input-bordered flex items-center w-[300px] gap-2">
           <input
@@ -50,7 +50,7 @@ const ToursAndPackages = () => {
         </label>
       </div>
       
-      <div className="flex justify-center flex-wrap gap-6">
+      <div className="flex justify-center flex-wrap gap-8 max-w-7xl mx-auto px-4">
         {
           filteredTours && filteredTours.map(t => <Package key={t.slno} {...t} />)
         }

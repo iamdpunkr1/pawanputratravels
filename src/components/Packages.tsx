@@ -28,8 +28,8 @@ const settings = {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
@@ -43,16 +43,16 @@ const settings = {
 };
 
 const Packages = forwardRef<HTMLElement>((_, ref) => {
-  const newTours = tours.filter(t=>  t.state.includes("Meghalaya") || t.state.includes("Arunachal"))
+  const newTours = tours.filter(t=>  t.state.includes("Meghalaya") || t.state.includes("Arunachal") || t.state.includes("Assam"))
   console.log(newTours)
   return (
-    <section ref={ref} className="max-w-6xl mx-auto relative">
+    <section ref={ref} className="max-w-6xl mx-auto px-4 relative">
       {/* <div className='animate-blob2 absolute bg-teal-500 h-96 w-96 rounded-full z-1 blur-2xl right-0 -bottom-10 opacity-50'></div> */}
       <h6 className="text-[#3FC1C9] text-xl font-semibold">Our Packages</h6>
       <div className="flex flex-col gap-4 md:flex-row md:justify-between lg:justify-between pt-2">
         <h1 className="text-[#364F6B] font-semibold text-4xl lg:text-5xl">Explore beautiful places now</h1>
         <Link to="/tours" >
-        <button className="btn btn-sm btn-outline btn-primary">
+        <button className="btn btn-sm btn-outline btn-primary mt-4 ">
           View All
         </button>
         </Link>

@@ -1,4 +1,5 @@
 import { Zoom } from "react-awesome-reveal"
+import { Link } from "react-router-dom";
 
 type ServiceProps = {
     icon: React.ReactNode;
@@ -26,7 +27,16 @@ const Service = ({icon, title, description}: ServiceProps) => {
         
         <div  className="contentB text-white bg-[#222] w-full h-full text-sm ">
             <div className="flex justify-center items-center px-6 py-11">
-                <button className="btn btn-outline btn-sm btn-accent">View Details</button>
+                {
+                    description.includes("Travel Packages") ? 
+                    <Link to="/tours" >
+                        <button className="btn btn-outline btn-sm btn-accent">View Details</button>
+                    </Link>
+                        :
+                    <Link to="https://forms.gle/mKycKJJYDoKv4v599" >
+                     <button className="btn btn-outline btn-sm btn-accent">View Details</button>
+                    </Link>
+                }
             </div>
         </div>
         

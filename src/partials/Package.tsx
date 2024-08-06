@@ -43,7 +43,7 @@ const Package = ({slno:_, state, image, placesCovered, days, nights, itineraryCo
 
 
   return (
-    <div className="card max-w-80 h-[500px] bg-white shadow-md">
+    <div className="card my-4 max-w-80 h-[500px] bg-white shadow-md">
     <figure className=" h-[400px]"><img className=" hover:scale-125 transition duration-1000 ease-in-out" src={image} alt={itineraryCode} /></figure>
     <div className="h-full card-body flex flex-col">
         <h2 className="h-2/12 text-xl font-semibold hover:text-primary cursor-pointer pb-3">
