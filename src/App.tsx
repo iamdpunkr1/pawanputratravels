@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import ToursAndPackages from "./pages/ToursAndPackages";
 import Itinerary from "./pages/Itinerary";
+import NotFound from "./pages/NotFound";
+
 
 function App() {
 
@@ -16,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/tours" element={<ToursAndPackages/>} />
         <Route path="/itinerary/:itineraryCode" element={<Itinerary/>} />
-        <Route path="*" element={<h1 className="">404 Not Found</h1>} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer/>
     </Router>
